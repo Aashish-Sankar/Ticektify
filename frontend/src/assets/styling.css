@@ -1,0 +1,100 @@
+.card a {
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: large;
+    color: gray;
+  }
+
+  .card{
+    border-style:double !important;
+    border-width: 1ch !important;
+    border-color: rgb(0, 0, 0) !important;
+    box-shadow: 3px 3px 3px rgb(83, 82, 82) !important;
+    color:rgb(0, 0, 0) !important;
+    text-shadow: 1px 1px 1px rgb(1, 67, 1) !important;
+    background-color: rgb(236, 235, 203) !important;
+  }
+
+  h1{
+    text-shadow: 3px 3px 5px rgb(77, 75, 75);
+  }
+
+  a:hover{
+    color: black;
+  }
+
+  .splcard{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    border: none !important; 
+    box-shadow: none !important;
+    background-color: rgb(243, 215, 180) !important;
+    
+  }
+ 
+
+
+  body{
+    font-family: Consolas,"courier new";
+    font-size: large;
+    font-weight: 200;
+    background-color:rgb(243, 215, 180) !important;
+  }
+
+  table{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(1, 67, 1);
+
+  }
+
+  td{
+    align-items: center;
+    vertical-align: middle;
+  }
+
+
+.form input[type="date"],
+.form input[type="datetime"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="time"],
+.form input[type="url"],
+.form input[type='submit'],
+.form button,
+.form textarea,
+.form select,
+.form input[type="text"] {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: #e8eeef;
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#000000;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+
+.card_btn{
+  background-image: linear-gradient(#29b6f6,#0a8bdd) !important;
+}
+
+.card_btn:hover{
+  color : white!important ;
+}
+
+
+
