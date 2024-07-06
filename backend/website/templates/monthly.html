@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Monthly Booking Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Your Monthly Booking Details</h1>
+        <h2>Hello {{ user.first_name }},</h2>
+        <p>Here are your booking details for the past month:</p>
+        <br/>
+        <ul class="list-group">
+            {% for booking in bookings %}
+                <li class="list-group-item">
+                    <strong>You watched "{{ booking.screening.show.name }}"</strong> at {{ booking.screening.venue.name }}, {{ booking.screening.venue.place }}, {{ booking.screening.venue.location }} on {{ booking.date_time.strftime("%B %d") }} - <strong>{{ booking.seats }} tickets</strong>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
