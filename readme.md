@@ -1,5 +1,4 @@
-
-# Installation
+# Ticketify Installation
 
 ## Backend
 
@@ -23,4 +22,19 @@
   npm install  #it will reinstall all the dependencies listed in the package.json
   npm run serve
 ```
-"# Ticektify" 
+
+## Redis and Celeruy
+
+```bash
+  cd server
+  redis-server
+  celery -A jobs worker --loglevel=info
+  celery -A jobs beat --loglevel=info
+
+  // for manually running the jobs:
+
+  celery -A jobs call jobs.send_daily_emails
+  celery -A jobs call jobs.monthly_mail_sender
+
+```
+
