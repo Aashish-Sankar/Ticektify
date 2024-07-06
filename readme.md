@@ -22,4 +22,5 @@
   cd Frontend
   npm install  #it will reinstall all the dependencies listed in the package.json
   npm run serve
-```"# Ticektify" 
+```
+"# Ticektify" 
